@@ -13,6 +13,7 @@ export enum AppView {
   VAULT = 'VAULT',
   DETAILS = 'DETAILS',
   STATS = 'STATS',
+  DEPLOY = 'DEPLOY',
   SYSTEM = 'SYSTEM'
 }
 
@@ -35,4 +36,10 @@ export interface UserSettings {
   theme: 'dark' | 'light';
   username: string;
   walletAddress: string | null;
+}
+
+export interface ClankerDeployParams {
+  name: string;
+  symbol: string;
+  initialSupply: string;
 }

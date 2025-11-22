@@ -1,0 +1,16 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjM2MjEsInR5cGUiOiJjdXN0b2RpIiwiYmxvY2tDaGFpbiI6ImV0aGVyZXVtIn0",
+    "payload": "eyJkb21haW4iOiJleGFtcGxlLmNvbSJ9",
+    "signature": "MhF...Placeholders...Use_CLI_To_Generate"
+  },
+  "frame": {
+    "version": "1",
+    "name": "Sealed Diary",
+    "iconUrl": "https://pub-52b0233a38e7497f9379c0960d512434.r2.dev/sealed-icon.png",
+    "homeUrl": "https://sealed-diary.vercel.app",
+    "splashImageUrl": "https://pub-52b0233a38e7497f9379c0960d512434.r2.dev/sealed-splash.png",
+    "splashBackgroundColor": "#020617",
+    "webhookUrl": "https://sealed-diary.vercel.app/api/webhook"
+  }
+}

@@ -32,6 +32,17 @@ export const Navigation: React.FC<NavigationProps> = ({ currentView, setView }) 
       <div className="w-px h-4 bg-slate-200 dark:bg-slate-800 transition-colors duration-300"></div>
 
       <button
+        onClick={() => setView(AppView.DEPLOY)}
+        className={`flex-1 h-full flex items-center justify-center transition-colors duration-300 ${
+          currentView === AppView.DEPLOY ? 'bg-violet-100 dark:bg-violet-900/20 text-violet-600 dark:text-violet-400' : 'text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300'
+        }`}
+      >
+        <span className="text-[10px] font-mono font-bold uppercase tracking-widest">CLANK</span>
+      </button>
+
+      <div className="w-px h-4 bg-slate-200 dark:bg-slate-800 transition-colors duration-300"></div>
+
+      <button
         onClick={() => setView(AppView.STATS)}
         className={`flex-1 h-full flex items-center justify-center transition-colors duration-300 ${
           currentView === AppView.STATS ? 'bg-violet-100 dark:bg-violet-900/20 text-violet-600 dark:text-violet-400' : 'text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300'
@@ -48,7 +59,7 @@ export const Navigation: React.FC<NavigationProps> = ({ currentView, setView }) 
           currentView === AppView.SYSTEM ? 'bg-violet-100 dark:bg-violet-900/20 text-violet-600 dark:text-violet-400' : 'text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300'
         }`}
       >
-        <span className="text-[10px] font-mono font-bold uppercase tracking-widest">SYSTEM</span>
+        <span className="text-[10px] font-mono font-bold uppercase tracking-widest">SYS</span>
       </button>
     </nav>
   );
